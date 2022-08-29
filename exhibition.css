@@ -1,0 +1,100 @@
+
+.page-intro {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    background-image: url("assets/exhibition.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-intro-header {
+    width: 80%;
+    height: fit-content;
+    color: white;
+    font-size: 40px;
+}
+
+.page-main-content {
+    
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-category {
+    padding: 4% 0 4% 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+    /* background-color: blue; */
+}
+
+.content-wrapper {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: white; */
+}
+
+.category-desc {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.category-desc a {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    font-style: italic;
+    text-underline-position: under  ;
+}
+
+.cate-card-wrapper {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap:4%;
+}
+.cate-card  {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+#vehicle  {
+    background-color: black;
+    color: white;
+}
+
+#vehicle .content-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#vehicle a {
+    color: white;
+}

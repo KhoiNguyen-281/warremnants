@@ -11,24 +11,35 @@
 <body>
 
     <header id="header">
-        <div class="logo header-ele"></div>
+        <div class="logo header-ele">Logo</div>
         <form class="search header-ele">
             <input type="text" name="" id="" class="input-field">
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
         <nav class="nav-bar header-ele">
             <ul class="tab-wrapper">
-                <li class="tab-item">
+                <li class="tab-item focus">
                     <a href="">Home</a>
                 </li>
-                <li class="tab-item">
-                    <a href="">Exhibitions</a>
+                <li class="tab-item" id="tab-exhibition">
+                    <a href="exhibition.html">Exhibitions</a>
+                    <ul class="sub-nav">
+                        <li class="sub-nav-tab">
+                            <a href="exhibition/guns.html" style="color: black;">Guns</a>
+                        </li>
+                        <li class="sub-nav-tab">
+                            <a href="exhibition/vehicle.html" style="color: black;">Vehicles</a>
+                        </li>
+                        <li class="sub-nav-tab">
+                            <a href="exhibition/equipments.html" style="color: black;">Equipments</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="tab-item">
                     <a href="">Booking</a>
                 </li>
                 <li class="tab-item">
-                    <a href="">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -37,7 +48,9 @@
     <main id="main">
         <div class="intro-wrapper">
             <div class="intro-video">
-                <video src="assets/Sickick - Mind Games (Official Video).mp4" autoplay muted loop></video>
+                <video  autoplay muted loop>
+                    <source src="assets/Bảo tàng chứng tích chiến tranh.mp4">
+                </video>
             </div>
             <div class="intro-button-wrapper">
                 <div class="intro-button">
@@ -47,15 +60,35 @@
         </div>
 
         <div class="main-content"> 
-            <div class="short-description">
-                <h2>Open time</h2>
+            <div class="main-sections">
+                <h2>Short description</h2>
             
                 <div class="desc-content">
-                    <p></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
-            <div class="home-exhibition">
+            <div class="main-sections">
+                <h2>Exhibitions</h2>
 
+                <div class="exhibition">
+                    <div class="exhibi-card">
+                        <img src="" alt="">
+                        <h3 class="card-info"></h3>
+                    </div>
+                    <div class="exhibi-card">
+                        <img src="" alt="">
+                        <h3 class="card-info"></h3>
+                    </div>
+                    <div class="exhibi-card">
+                        <img src="" alt="">
+                        <h3 class="card-info"></h3>
+                    </div>
+                </div>
+                <div class="see-more-wrapper">
+                    <div class="see-more-button">
+                        <a href="exhibition.html">See more</a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
