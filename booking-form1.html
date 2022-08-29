@@ -1,0 +1,104 @@
+<html>
+    <div class="col-12 card p-4">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <div id="current_date"></p>
+                <script>
+                date = new Date();
+                year = date.getFullYear();
+                month = date.getMonth() + 1;
+                day = date.getDate();
+                </script>                
+            <label for="start">Date of visit:</label>
+            <input type="date" id="start" name="trip-start"
+                   value="current_date"
+                   min="current_date" max="2022-12-31">
+          <div class="col-md-4 col-12">
+            <div class="form-group">
+              <label>Session</label>
+              <select class="form-control" name="m-session" data-parsley-required="" data-parsley-required-message="Please select a session">
+              <option value="">Select session</option>
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+            </div>  
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="form-group">
+              <label>No. of People visit</label>
+              <select class="form-control" name="m-pax" data-parsley-required="" data-parsley-required-message="Please select number of people">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5+">5+</option>
+                                    </select>
+            </div>   
+          </div>  
+      </div>  
+          
+        <div class="section-title">
+          <h3>Name of Representative </h3>
+        </div>
+        <div class="row">   
+          <div class="col-md-6 col-12">             
+            <div class="form-group">
+              <label for="email">First Name:
+              </label>
+              <input type="text" name="m-fname[]" value="" class="form-control input-md" aria-required="true" aria-invalid="false" placeholder="First Name" autocomplete="off" data-parsley-required="" data-parsley-required-message="First Name is required">
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="form-group">
+              <label for="email">Last Name:
+              </label>
+              <input type="text" name="m-lname[]" value="" class="form-control input-md" aria-required="true" aria-invalid="false" placeholder="Last Name" autocomplete="off" data-parsley-required="" data-parsley-required-message="Last Name is required">
+            </div>  
+          </div>
+        </div>      
+        <div class="row">   
+          <div class="col-md-6 col-12">             
+            <div class="form-group">
+              <label for="pwd">Email:
+              </label>
+              <input type="text" name="m-email[]" value="" class="form-control input-md" aria-required="true" aria-invalid="false" placeholder="Email" autocomplete="off" data-parsley-required="" data-parsley-type="email" data-parsley-error-message="Invalid Email">
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="form-group">
+              <label for="email">Mobile Number:
+              </label>
+              <input type="text" name="m-mobile[]" value="" class="form-control input-md" aria-required="true" aria-invalid="false" placeholder="Mobile Number" autocomplete="off" data-parsley-required="" data-parsley-type="digits" data-parsley-required-message="Mobile Number is required">
+            </div> 
+          </div>
+        </div>
+        <div class="row">   
+          <div class="col-md-6 col-12">
+            <div class=" form-group">
+              <label for="email">Address:
+              </label>
+              <textarea name="m-address[]" value="" class="form-control input-md" aria-required="true" aria-invalid="false" placeholder="Address" autocomplete="off" data-parsley-required="" data-parsley-required-message="Address is required"></textarea>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="form-group">
+              <label for="email">Name of Company/Agency (If applicable)</label>
+              <input type="text" name="m-company" value="" class="form-control input-md" aria-required="true" aria-invalid="false" placeholder="Name of Company/Agency">
+            </div> 
+          </div>                
+              <!-- <div class="col-md-6 col-12">   
+                <div class="form-group">
+                  <label>Upload file</label>
+                  <input type="file" id="myFile" name="filename">
+                </div>
+              </div> -->
+              <div class="col-12 p-0 mt-3"> 
+                  <div class="col-12 p-0 mt-3"> 
+                    <input type="hidden" name="m-type" value="group tour">
+                    <input type="button" name="save" class="btn btn-info mb-5" value="Confirm" id="butsave" style="width:100%!important;">
+                  </div>
+            </div>
+
+        </div> 
+      </div>
+</html>
