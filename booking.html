@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header id="header">
+        <div class="logo header-ele">Logo</div>
+        <form class="search header-ele">
+            <input type="text" name="" id="" class="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <nav class="nav-bar header-ele">
+            <ul class="tab-wrapper">
+                <li class="tab-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="tab-item" id="tab-exhibition">
+                    <a href="exhibition.html">Exhibitions</a>
+                    <ul class="sub-nav">
+                        <li class="sub-nav-tab">
+                            <a href="exhibition/guns.html" style="color: black;">Guns</a>
+                        </li>
+                        <li class="sub-nav-tab">
+                            <a href="exhibition/vehicle.html" style="color: black;">Vehicles</a>
+                        </li>
+                        <li class="sub-nav-tab">
+                            <a href="exhibition/equipments.html" style="color: black;">Equipments</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tab-item focus">
+                    <a href="booking.html">Booking</a>
+                </li>
+                <li class="tab-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="form-wrapper">
+            <form action="post">
+                <div class="booking-title">
+                    <h3>Booking</h3>
+                </div>
+                <div class="booking-detail">
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="Date"><b>Date of visiting</b></label>
+                        </div>
+                        <input type="date" id="start" 
+                        name="trip-start"
+                        value="current_date"
+                        min="current_date" max="2022-12-31" class="input-field">
+                    </div>
+
+                    
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="Session"><b>Session</b></label>
+                        </div>
+                        <select  name="m-session"
+                        data-parsley-required-message="Please select a session" class="input-field">
+                            <option value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="No. People"><b>Number of visitors</b></label>
+                        </div>
+                        <input 
+                        min="0" 
+                        type="number" 
+                        name="no. people" id="people" class="input-field"
+                        data-parsley-required-message="Please select number of people" required>
+                    </div>
+
+                </div>
+                <div class="representative-title">
+                    <h3>Details of representative</h3>
+                </div>
+
+                <div class="visitor-detail">
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="First name"><b>First name</b></label>
+                        </div>
+                        <input type="text" 
+                        name="firstname" id="firstname" 
+                        class="input-field"
+                        required placeholder="First name"
+                        data-parsley-required-message="Please provide your first name">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="Last name"><b>Last name</b></label>
+                        </div>
+                        <input type="text" 
+                        class="input-field"
+                        name="lastname" id="lastname"
+                        required placeholder="Last name"
+                        data-parsley-required-message="Please provide your last name">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="Email"><b>Email</b></label>
+                        </div>
+                        <input type="email" 
+                        class="input-field"
+                        name="email" id="email"
+                        required placeholder="Ex: email@gmail.com"
+                        data-parsley-required-message="Please provide your email">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="phone"><b>Phone number</b></label>
+                        </div>
+                        <input type="phone"
+                        class="input-field" 
+                        name="phone" id="phone"
+                        required placeholder="Phone number"
+                        data-parsley-required-message="Please provide your phone number">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="address"><b>Address</b></label>
+                        </div>
+                        <input type="text" 
+                        class="input-field"
+                        name="address" id="address"
+                        placeholder="address">
+                    </div>
+
+                    <!-- <div class="form-row">
+                        <div class="form-label">
+                            <label for="company name">
+                                <b>Company/Agency (If applicable)</b>
+                            </label>
+                        </div>
+                        <input type="text" 
+                        class="input-field"
+                        name="ncompany" id="ncompany"
+                        placeholder="Name of company">
+                    </div> -->
+
+                </div>
+
+                <div class="form-btn">
+                    <input type="button" id="confirm" name="confirm" value="Confirm">
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    
+      <footer id="footer"></footer>
+</body>
+</html>

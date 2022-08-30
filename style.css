@@ -8,6 +8,7 @@ body, html {
     -text-secondary: white
 }
 
+
 main {
     display: flex;
     flex-direction: column;
@@ -37,14 +38,14 @@ main {
 }
 
 .search {
-    width: 24vw;
+    width: 40vw;
     display: flex;
     gap: 0
     /* height: ; */
     /* background-color: green; */
 }
 
-input[type=text] {
+.search input[type=text] {
     width: 60%;
     height: 32px;
     border: none;
@@ -75,7 +76,8 @@ input[type=text] {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 1%;
+    gap: 8%;
+    height: 100%;
    
 }
 
@@ -84,24 +86,61 @@ input[type=text] {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10vw;
-    height: 4vh;
-    border-radius: 16px;
+    width: fit-content;
+    height: 100%;
+    /* border-radius: 16px; */
     transition: 0.2s;
 }
+
+#tab-exhibition {
+    position: relative;
+}
+
+.sub-nav {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    left: 0%;
+    top: 95%;
+    height: fit-content;
+    width: 10vw;
+    background-color: white;
+    list-style: none;
+    padding: 10% 0 4% 20%;
+}
+
+.sub-nav-tab {
+    padding-bottom: -5%;
+    width: 80%;
+    height: 3vh;
+    margin-bottom: 8%;
+}
+
+.sub-nav-tab:hover {
+    border-bottom: 2px solid black;
+}
+
 .tab-item a {
     text-decoration: none;
     font-size: 1.5rem;
     color: white;
 }
+#tab-exhibition:hover > .sub-nav {
+    display: block;
+}
 
 .tab-item:hover {
-    background-color: white;
+    /* background-color: white; */
+    border-bottom: 4px solid white;
 }
 
-.tab-item:hover > a {
-    color: black;
+.focus {
+    border-bottom: 4px solid white;
 }
+
+/* .tab-item:hover > a {
+    /* text-decoration: underline;
+    text-underline-position: under  ; */
 
 
 /* Main contents */
@@ -159,27 +198,80 @@ input[type=text] {
 /* Description section */
 
 .main-content {
-    width: 80vw;
+    width: 78vw;
     height: fit-content;
 }
 
-.short-description {
+.main-sections {
     /* width: 60vw; */
     height: fit-content;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4% 0 0 0;
 }
 
 h2 {
+    margin-bottom: 0;
     text-align: center;
-    height: 100px;
-    background-color: green;
+    /* height: 50px; */
+    font-size: 36px;
+    /* background-color: green; */
+}
+
+p {
+    font-size: 24px;
+    text-align: center;
 }
 
 
-.desc-content {}
-
-
 /* end Description section */
+/* Exhibiton secition 4 cards */
+.exhibition {
+    padding-top: 4%;
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2%;
+}
+
+.exhibi-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: pink; */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.see-more-wrapper {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
+
+.see-more-button {
+    /* width: 30vw; */
+    height: 5vh;
+    /* background-color: pink; */
+}
+.see-more-button a  {
+    font-size: 24px;
+    font-style: italic;
+    text-underline-position: under;
+}
+/* end Exhibition seciton */
 
 /* end Main contents */
+
+/* Footer */
+footer {
+    width: 100vw;
+    height: 40vh;
+    background-color: black;
+}
