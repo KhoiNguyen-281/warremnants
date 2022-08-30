@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../exhibition.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../index.js" defer></script>
     <title>Vehicles</title>
 </head>
 <body>
@@ -39,15 +40,19 @@
                 <li class="tab-item">
                     <a href="../booking.html">Booking</a>
                 </li>
-                <li class="tab-item">
-                    <a href="../contact.html">Contact</a>
-                </li>
             </ul>
         </nav>
     </header>
 
     <main id="main">
-        <div class="page-intro">
+        <div class="blurred-background" id="blurred-background"></div>
+        <div class="page-intro" id="vehicle-background">
+            
+            <div class="page-intro-header">
+                <h1>Vehicles</h1>
+            </div>
+        </div>
+        <div class="main-content-wrapper">
             <div class="breadcrumbs">
                 <a href="../index.html">Home</a>
                 >
@@ -55,12 +60,7 @@
                 >
                 <label for="guns">Vehicles</label>
             </div>
-            <div class="page-intro-header">
-                <h1>Vehicles</h1>
-            </div>
-        </div>
-        <div class="main-content-wrapper">
-            <div class="artifact-wrapper" id="artifact-left">
+            <div class="artifact-wrapper" id="chinook">
                 <div class="sketchfab"> 
                     <iframe title="CH-47 Chinook" 
                     frameborder="0" allowfullscreen 
@@ -83,7 +83,7 @@
                 </div>
             </div>
 
-            <div class="artifact-wrapper" id="artifact-right">
+            <div class="artifact-wrapper artifact-right" id="patton">
                 <div class="sketchfab"> 
                     <iframe title="The M48 Patton" 
                         frameborder="0" allowfullscreen 
@@ -106,7 +106,7 @@
                 </div>
             </div>
 
-            <div class="artifact-wrapper" id="artifact-left">
+            <div class="artifact-wrapper" id="bomber">
                 <div class="sketchfab"> 
                     <iframe title="Bomber" 
                     frameborder="0" allowfullscreen 
@@ -133,6 +133,50 @@
         </div>
         
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <div class="footer-content-wrapper">
+            <div class="common-info-wrapper">
+                <div class="info-column">
+                    <div class="column-title"><b>Opening hours</b></div>
+                    <ul class="col-list">
+                        <li class="col-row">Monday to Friday: 7am - 5pm</li>
+                        <li class="col-row">Saturday to Sunday: 7am - 7pm</li>
+                        <li class="col-row"><a href="booking.html">Book now</a></li>
+                    </ul>
+                </div>
+                <div class="info-column">
+                    <div class="column-title"><b>Contact us</b></div>
+                    <ul class="col-list">
+                        <li class="col-row">Email: s3759804@rmit.edu.vn</li>
+                        <li class="col-row">Phone: 0777 - 042 - 801</li>
+                        <li class="col-row">Fax: 0777 - 042 - 801</li>
+                    </ul>
+                    
+                </div>
+                <div class="info-column">
+                    <div class="column-title"><b>Exhibitions</b></div>
+                    <ul class="col-list">
+                        <li class="col-row"><a href="exhibition/guns.html">Guns</a></li>
+                        <li class="col-row"><a href="exhibition/vehicle.html">Vehicles</a></li>
+                        <li class="col-row"><a href="exhibition/equipments.html">Equipments</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="map-wrapper" >
+                <a href="#address-info">
+                    <img src="../assets/map.png" id="map" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="address-info" id="address-info">
+            <img src="../assets/map.png" alt="">
+            <div class="map-x-btn" id="mx-btn">
+                <img src="../assets/icons8-xbox-x-30.png" alt="">
+            </div>
+            <div class="address">
+                28 Vo Van Tan, Ward 6, District 3, Ho Chi Minh City
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

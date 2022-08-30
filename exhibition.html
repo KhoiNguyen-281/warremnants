@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="exhibition.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js" defer></script>
     <title>UCD Webpage</title>
 </head>
 <body>
@@ -39,14 +41,12 @@
                 <li class="tab-item">
                     <a href="booking.html">Booking</a>
                 </li>
-                <li class="tab-item">
-                    <a href="contact.html">Contact</a>
-                </li>
             </ul>
         </nav>
     </header>
 
     <main id="main">
+        <div class="blurred-background" id="blurred-background"></div>
         <div class="page-intro">
             <div class="page-intro-header">
                 <h1>Exhibition</h1>
@@ -57,12 +57,23 @@
                 <div class="content-wrapper">
                     <div class="category-desc">
                         <h2 class="title">Guns</h2>
-                        <p class="content"></p>
+                        <p class="content">During the Vietnam War, this was the most common type of weapon used by Vietnamese soldiers. It helped them fight their enemies and fight for their independence after so many years of being ruled by the United States.
+                        </p>
                         <a href="/exhibition/guns.html">See more</a>
                     </div>
                     <div class="cate-card-wrapper">
-                        <div class="cate-card"></div>
-                        <div class="cate-card"></div>
+                        <a href="/exhibition/guns.html#AK47">
+                            <div class="cate-card">
+                                <img src="assets/The AK-47.jpeg" alt="">
+                            </div>
+                        </a>
+                        
+                        <a href="/exhibition/guns.html#M14">
+                            <div class="cate-card">
+                                <img src="assets/The Rifle.webp" alt="">
+                            </div>
+                        </a>
+                        
                     </div>
                 </div>
             </div>
@@ -70,12 +81,22 @@
                 <div class="content-wrapper">
                     <div class="category-desc">
                         <h2 class="title">Vehicle</h2>
-                        <p class="content"></p>
+                        <p class="content">This type of vehicle is intended specifically for use during armed conflict and could both convey and defend soldiers. Due to the unique components employed in these vehicles, they could survive the impacts of explosives.
+                        </p>
                         <a href="/exhibition/vehicle.html">See more</a>
                     </div>
                     <div class="cate-card-wrapper">
-                        <div class="cate-card"></div>
-                        <div class="cate-card"></div>
+                        <a href="/exhibition/vehicle.html#patton">
+                            <div class="cate-card">
+                            <img src="assets/M48 Patton .jpeg" alt="">
+                        </div></a>
+                        
+                        <a href="/exhibition/vehicle.html#bomber">
+                            <div class="cate-card">
+                                <img src="assets/ Bomber Plane.jpeg" alt="">
+                            </div>
+                        </a>
+                        
                     </div>
                 </div>
             </div>
@@ -83,17 +104,72 @@
                 <div class="content-wrapper">
                     <div class="category-desc">
                         <h2 class="title">Equipments</h2>
-                        <p class="content"></p>
+                        <p class="content">All of this gear is extremely helpful for assisting soldiers survive in hostile environments and when engaged in combat with the attack.
+                        </p>
                         <a href="exhibition/equipments.html">See more</a>
                     </div>
                     <div class="cate-card-wrapper">
-                        <div class="cate-card"></div>
-                        <div class="cate-card"></div>
+                        <a href="/exhibition/equipments.html#binoculars">
+                            <div class="cate-card">
+                                <img src="assets/Binoculars.jpeg" alt="">
+                            </div>
+                        </a>
+                        
+                        <a href="/exhibition/equipments.html#grenade">
+                            <div class="cate-card">
+                                <img src="assets/Mk2 Grenade .jpeg" alt="">
+                            </div>
+                        </a>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <div class="footer-content-wrapper">
+            <div class="common-info-wrapper">
+                <div class="info-column">
+                    <div class="column-title"><b>Opening hours</b></div>
+                    <ul class="col-list">
+                        <li class="col-row">Monday to Friday: 7am - 5pm</li>
+                        <li class="col-row">Saturday to Sunday: 7am - 7pm</li>
+                        <li class="col-row"><a href="booking.html">Book now</a></li>
+                    </ul>
+                </div>
+                <div class="info-column">
+                    <div class="column-title"><b>Contact us</b></div>
+                    <ul class="col-list">
+                        <li class="col-row">Email: s3759804@rmit.edu.vn</li>
+                        <li class="col-row">Phone: 0777 - 042 - 801</li>
+                        <li class="col-row">Fax: 0777 - 042 - 801</li>
+                    </ul>
+                    
+                </div>
+                <div class="info-column">
+                    <div class="column-title"><b>Exhibitions</b></div>
+                    <ul class="col-list">
+                        <li class="col-row"><a href="exhibition/guns.html">Guns</a></li>
+                        <li class="col-row"><a href="exhibition/vehicle.html">Vehicles</a></li>
+                        <li class="col-row"><a href="exhibition/equipments.html">Equipments</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="map-wrapper" >
+                <a href="#address-info">
+                    <img src="assets/map.png" id="map" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="address-info" id="address-info">
+            <img src="assets/map.png" alt="">
+            <div class="map-x-btn" id="mx-btn">
+                <img src="assets/icons8-xbox-x-30.png" alt="">
+            </div>
+            <div class="address">
+                28 Vo Van Tan, Ward 6, District 3, Ho Chi Minh City
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

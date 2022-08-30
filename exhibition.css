@@ -3,6 +3,7 @@ main {
     height: fit-content;
 }
 
+
 .page-intro {
     position: relative;
     width: 100vw;
@@ -16,7 +17,17 @@ main {
     justify-content: center;
 }
 
+#guns-background {
+    background-image: url("assets/Guns background .jpeg");
+}
 
+#equipment-background {
+    background-image: url("assets/Equipment background.jpeg");
+}
+
+#vehicle-background {
+    background-image: url("assets/Vehicle background.jpeg");
+}
 .page-intro-header {
     width: 80%;
     height: fit-content;
@@ -25,7 +36,6 @@ main {
     background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
     border: 3px solid #f1f1f1;
     font-size: 40px;
-    text-shadow: rgba(21, 21, 26, 1) 1px 10px 16px;
     text-align: center;
     
 }
@@ -60,6 +70,7 @@ main {
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .title {
     padding: 0;
@@ -67,9 +78,11 @@ main {
 }
 
 .content {
-    width: 100%;
+    width: 80%;
     height: 80%;
     overflow: hidden;
+    text-align: justify;
+    padding: 0 -20% 0 20%
 }
 
 .category-desc a {
@@ -94,6 +107,12 @@ main {
     background-color: white;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    transition: 0.2s;
+}
+.cate-card img {
+    width: 480px;
+    height: 100%;
+    object-fit: contain;
 }
 #vehicle  {
     background-color: black;
@@ -103,12 +122,29 @@ main {
 #vehicle .content-wrapper{
     display: flex;
     flex-direction: row-reverse;
+    width: 85%;
+}
+
+/* #vehicle .content {
+    box-sizing: border-box;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    text-align: justify;
+    padding: 0 0 0 10%
+} */
+
+#vehicle .page-category {
+    width: 90%;
 }
 
 #vehicle a {
     color: white;
 }
 
+.cate-card:hover {
+    transform: scale(1.1);
+}
 
 /* category page */
 .main-content-wrapper {
@@ -147,7 +183,7 @@ main {
     /* padding: 4%; */
 }
 
-#artifact-right {
+.artifact-right {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -157,11 +193,11 @@ main {
     color: white;
 }
 
-#artifact-right .artifact-desc {
+.artifact-right .artifact-desc {
     padding: 2% 0 2% 8%;
 }
 
-#artifact-right .sketchfab {
+.artifact-right .sketchfab {
     padding: 2% 8% 2% 4%
 }
 .sketchfab {
@@ -193,17 +229,18 @@ main {
 }
 
 .breadcrumbs {
-    position:absolute;
-    top: 0;
-    left: 10%;
+    
+    width: 90%;
     display: flex;
     flex-direction: row;
     padding: 16px;
     gap: 12px;
-    color: white
+    font-size: 20px;
+    /* color: white */
 }
 
 .breadcrumbs > a{
-    color: white;
+    color: black;
     text-decoration: underline;
+    /* text-underline-position: under; */
 }

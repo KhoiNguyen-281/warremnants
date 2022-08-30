@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="booking.css">
     <link rel="stylesheet" href="style.css">
+    <script src="booking.js" defer></script>
+    <script src="index.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -36,16 +38,14 @@
                     </ul>
                 </li>
                 <li class="tab-item focus">
-                    <a href="booking.html">Booking</a>
-                </li>
-                <li class="tab-item">
-                    <a href="contact.html">Contact</a>
+                    <a href="">Booking</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main id="main">
+        <div class="blurred-background" id="blurred-background"></div>
         <div class="form-wrapper">
             <form action="post">
                 <div class="booking-title">
@@ -84,8 +84,8 @@
                         name="no. people" id="people" class="input-field"
                         data-parsley-required-message="Please select number of people" required>
                     </div>
-
                 </div>
+
                 <div class="representative-title">
                     <h3>Details of representative</h3>
                 </div>
@@ -141,7 +141,7 @@
                         </div>
                         <input type="text" 
                         class="input-field"
-                        name="address" id="address"
+                        name="address"
                         placeholder="address">
                     </div>
 
@@ -164,10 +164,62 @@
                 </div>
             </form>
         </div>
+        <div class="success-message" id="success-message">
+            <div class="x-btn" id="x-btn">
+                <img src="assets/icons8-xbox-x-30.png" alt="">
+            </div>
+            <div class="message">
+                Registered Successfully
+            </div>
+        </div>
     </main>
 
 
     
-      <footer id="footer"></footer>
+    <footer id="footer">
+        <div class="footer-content-wrapper">
+            <div class="common-info-wrapper">
+                <div class="info-column">
+                    <div class="column-title"><b>Opening hours</b></div>
+                    <ul class="col-list">
+                        <li class="col-row">Monday to Friday: 7am - 5pm</li>
+                        <li class="col-row">Saturday to Sunday: 7am - 7pm</li>
+                        <li class="col-row"><a href="">Book now</a></li>
+                    </ul>
+                </div>
+                <div class="info-column">
+                    <div class="column-title"><b>Contact us</b></div>
+                    <ul class="col-list">
+                        <li class="col-row">Email: s3759804@rmit.edu.vn</li>
+                        <li class="col-row">Phone: 0777 - 042 - 801</li>
+                        <li class="col-row">Fax: 0777 - 042 - 801</li>
+                    </ul>
+                    
+                </div>
+                <div class="info-column">
+                    <div class="column-title"><b>Exhibitions</b></div>
+                    <ul class="col-list">
+                        <li class="col-row"><a href="">Guns</a></li>
+                        <li class="col-row"><a href="">Vehicles</a></li>
+                        <li class="col-row"><a href="">Equipments</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="map-wrapper" >
+                <a href="#address-info">
+                    <img src="assets/map.png" id="map" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="address-info" id="address-info">
+            <img src="assets/map.png" alt="">
+            <div class="map-x-btn" id="mx-btn">
+                <img src="assets/icons8-xbox-x-30.png" alt="">
+            </div>
+            <div class="address">
+                28 Vo Van Tan, Ward 6, District 3, Ho Chi Minh City
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

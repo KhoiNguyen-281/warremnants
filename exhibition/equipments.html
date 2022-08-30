@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../exhibition.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../index.js" defer></script>
     <title>Equipments</title>
 </head>
 <body>
@@ -39,15 +40,18 @@
                 <li class="tab-item">
                     <a href="../booking.html">Booking</a>
                 </li>
-                <li class="tab-item">
-                    <a href="../contact.html">Contact</a>
-                </li>
             </ul>
         </nav>
     </header>
 
     <main id="main">
-        <div class="page-intro">
+        <div class="page-intro" id="equipment-background">
+            
+            <div class="page-intro-header">
+                <h1>Equipments</h1>
+            </div>
+        </div>
+        <div class="main-content-wrapper">
             <div class="breadcrumbs">
                 <a href="../index.html">Home</a>
                 >
@@ -55,23 +59,18 @@
                 >
                 <label for="guns">Equipments</label>
             </div>
-            <div class="page-intro-header">
-                <h1>Equipments</h1>
-            </div>
-        </div>
-        <div class="main-content-wrapper">
-            <div class="artifact-wrapper" id="artifact-left">
+            <div class="artifact-wrapper" id="grenade">
                 <div class="sketchfab"> 
                     <iframe title="The MK2 Grenade" 
-        frameborder="0" allowfullscreen 
-        mozallowfullscreen="true" 
-        webkitallowfullscreen="true" 
-        allow="autoplay; 
-        fullscreen; 
-        xr-spatial-tracking" 
-        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share 
-        width="640" height="480" 
-        src="https://sketchfab.com/models/09a34665e3424873bad60b1edbdd4f8e/embed?ui_theme=dark">
+                    frameborder="0" allowfullscreen 
+                    mozallowfullscreen="true" 
+                    webkitallowfullscreen="true" 
+                    allow="autoplay; 
+                    fullscreen; 
+                    xr-spatial-tracking" 
+                    xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share 
+                    width="640" height="480" 
+                    src="https://sketchfab.com/models/09a34665e3424873bad60b1edbdd4f8e/embed?ui_theme=dark">
                     </iframe> 
                 </div>
                 <div class="artifact-desc">
@@ -83,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="artifact-wrapper" id="artifact-right">
+            <div class="artifact-wrapper artifact-right" id="binoculars">
                 <div class="sketchfab"> 
                     <iframe title="Binoculars" 
                     frameborder="0" allowfullscreen 
@@ -99,14 +98,14 @@
                 </div>
                 <div class="artifact-desc">
                     <h3>Binoculars</h3>
-                    <p><b>The origin</b>: This is one of the most valuable pieces of equipment for Vietnamese soldiers, allowing them to see their enemies clearly from a distance so they can easily manage and plan their attacks. In particular, the binoculars may be of great use to the soldiers during night warfare, as they could search for dangerous creatures to avoid while standing watch in the forest and prevent the enemy attacks.
+                    <p> This is one of the most valuable pieces of equipment for Vietnamese soldiers, allowing them to see their enemies clearly from a distance so they can easily manage and plan their attacks. In particular, the binoculars may be of great use to the soldiers during night warfare, as they could search for dangerous creatures to avoid while standing watch in the forest and prevent the enemy attacks.
                         With a design that enables the military to view appropriately oriented left-to-right and in a natural way with both eyes, soldiers might feel more at ease than when using single telescopes. Moreover, it increases visual acuity and gives depth perception by providing the human visual system with two sets of data to evaluate and integrate.<br><br>
                     <!-- <b>Advantages</b>: The M48 has infrared night vision goggles and can traverse slopes up to 31 degree, wade 1.40 metres deep, and cross a 2.76 metre wide moat.<br><br>
                     <b>Disadvantages</b>: The main issues with this M48 were its delayed service entrance and a range finder that was fairly difficult to use. Furthermore, it needed ongoing training and expertise.</p> -->
                 </div>
             </div>
 
-            <div class="artifact-wrapper" id="artifact-left">
+            <div class="artifact-wrapper" id="bottle">
                 <div class="sketchfab"> 
                     <iframe title="Vietnam War Bottle" 
                     frameborder="0" allowfullscreen 
@@ -122,7 +121,7 @@
                 </div>
                 <div class="artifact-desc">
                     <h3>Vietnam War Bottle</h3>
-                    <p><b>The origin</b>: One of the essential supplies was a water bottle, which allowed the soldiers to carry enough water to quench their thirst even when marching through dense woodlands devoid of lakes. Particularly under harsh situations, soldiers may feel thirsty and become ill quickly; therefore, drinking water might make them feel better and prevent them from getting faint. 
+                    <p> One of the essential supplies was a water bottle, which allowed the soldiers to carry enough water to quench their thirst even when marching through dense woodlands devoid of lakes. Particularly under harsh situations, soldiers may feel thirsty and become ill quickly; therefore, drinking water might make them feel better and prevent them from getting faint. 
                         With its war-specific design, this bottle could store hot or cold water for up to 12 hours, allowing the soldier to set the water's temperature.<br><br>
                     <!-- <b>Advantages</b>: Due to the fact that this aircraft was meant to carry bombs and other weapons, it can carry a great deal of weight and it is simple to control the explosives inside.<br><br>
                     <b>Disadvantages</b>: A further issue with the design is that the entrance and exit doors are rather narrow, making escape by soldiers using parachutes extremely hazardous.</p> -->
@@ -133,6 +132,50 @@
         </div>
         
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <div class="footer-content-wrapper">
+            <div class="common-info-wrapper">
+                <div class="info-column">
+                    <div class="column-title"><b>Opening hours</b></div>
+                    <ul class="col-list">
+                        <li class="col-row">Monday to Friday: 7am - 5pm</li>
+                        <li class="col-row">Saturday to Sunday: 7am - 7pm</li>
+                        <li class="col-row"><a href="booking.html">Book now</a></li>
+                    </ul>
+                </div>
+                <div class="info-column">
+                    <div class="column-title"><b>Contact us</b></div>
+                    <ul class="col-list">
+                        <li class="col-row">Email: s3759804@rmit.edu.vn</li>
+                        <li class="col-row">Phone: 0777 - 042 - 801</li>
+                        <li class="col-row">Fax: 0777 - 042 - 801</li>
+                    </ul>
+                    
+                </div>
+                <div class="info-column">
+                    <div class="column-title"><b>Exhibitions</b></div>
+                    <ul class="col-list">
+                        <li class="col-row"><a href="exhibition/guns.html">Guns</a></li>
+                        <li class="col-row"><a href="exhibition/vehicle.html">Vehicles</a></li>
+                        <li class="col-row"><a href="exhibition/equipments.html">Equipments</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="map-wrapper" >
+                <a href="#address-info">
+                    <img src="../assets/map.png" id="map" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="address-info" id="address-info">
+            <img src="../assets/map.png" alt="">
+            <div class="map-x-btn" id="mx-btn">
+                <img src="../assets/icons8-xbox-x-30.png" alt="">
+            </div>
+            <div class="address">
+                28 Vo Van Tan, Ward 6, District 3, Ho Chi Minh City
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
