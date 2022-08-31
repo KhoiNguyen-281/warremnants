@@ -110,7 +110,7 @@ main {
     transition: 0.2s;
 }
 .cate-card img {
-    width: 480px;
+    width: 400px;
     height: 100%;
     object-fit: contain;
 }
