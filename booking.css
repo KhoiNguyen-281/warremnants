@@ -53,6 +53,7 @@ main {
 .form-row  {
     box-sizing: border-box;
     width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     gap: 10%;
