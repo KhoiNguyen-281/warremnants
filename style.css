@@ -225,7 +225,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4% 0 0 0;
+    padding: 2% 0 4% 0;
 }
 
 h2 {
@@ -237,15 +237,15 @@ h2 {
 }
 
 p {
-    font-size: 24px;
-    text-align: justify;
+    font-size: 20px;
+    text-align: center;
 }
 
 
 /* end Description section */
 /* Exhibiton secition 4 cards */
 .exhibition {
-    padding-top: 4%;
+    padding-top: 2%;
     width: 100%;
     height: 40vh;
     display: grid;
