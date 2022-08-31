@@ -48,7 +48,16 @@ main {
 .logo {
     width: 16vw;
     /* height: inherit; */
-    background-color: white;
+    background-color: black;
+    
+    font-size: 24px;
+    display: flex;
+    text-align: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
 }
 
 .search {
