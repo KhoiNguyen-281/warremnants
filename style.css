@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400&family=Roboto&display=swap');
+
 body, html {
+    font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
 }
+html p {
+    line-height: 2;
+}
 
 :root {
-    -content-text: 16px;
-    -text-secondary: white
+    --font-family: ;
+    --content-text: 18px;
+    --font-title: 26px;
+    --text-secondary: white;
 }
 
 
@@ -147,7 +155,7 @@ main {
 
 .tab-item a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: var(--content-text);
     color: white;
 }
 #tab-exhibition:hover > .sub-nav {
@@ -208,7 +216,7 @@ main {
 
 .intro-button a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: var(--content-text);
     color: black;
 }
 
@@ -246,7 +254,7 @@ h2 {
 }
 
 p {
-    font-size: 20px;
+    font-size: var(--content-text);
     text-align: center;
 }
 
@@ -259,11 +267,15 @@ p {
     height: fit-content;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2%;
+    gap: 4%;
+}
+
+.exhibition a {
+    text-decoration: none;
 }
 
 .exhibi-card {
-    width: 350px;
+    width: 100%;
     height: 300px;
     /* background-color: pink; */
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
@@ -286,6 +298,7 @@ p {
     font-size: 24px;
     /* position: absolute; */
 }
+
 
 .exhibi-card:hover {
     transform: scale(1.1);

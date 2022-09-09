@@ -217,7 +217,7 @@ main {
 }
 
 .artifact-desc p {
-    text-align: start;
+    text-align: justify;
     font-size: 20px;
 }
 
